@@ -1,0 +1,46 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajout Bon de commande{% endblock %}
+
+{% block body %}
+<div class="container-fluid">
+    <h2> Renseigner les informations du bon de commande </h2>
+{{ form_start(form) }}
+    <div class="my-custom-class-for-errors">
+        {{ form_errors(form) }}
+    </div>
+
+    <div class="row">
+        <div class="col-sm-5">
+            {{ form_row(form.numCommande) }} 
+            
+     
+        </div>
+        <div class="col" id="some-custom-id">
+            {{ form_row(form.fournisseur) }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-5">
+            {{ form_row(form.typeDocument) }}
+        </div>
+        <div class="col" id="some-custom-id">
+            {{ form_row(form.nomClient) }}
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4">
+            {{ form_row(form.dateCommande) }}
+        </div>
+        <div class="col" id="some-custom-id">
+            {{ form_row(form.montant) }}
+        </div>
+    </div>
+
+
+    
+{{ form_end(form) }}
+</div>
+{% endblock %}
