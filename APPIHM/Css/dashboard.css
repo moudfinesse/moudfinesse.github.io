@@ -1,0 +1,9 @@
+.reduction {
+	display:  flex;
+	justify-content:  space-between;
+	align-items:  flex-end;
+	width:  300px;
+	margin:  0  auto;
+	margin-bottom:  40px;
+}
+
